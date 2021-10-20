@@ -14,3 +14,8 @@ function monthRate(hourlyRate, discount) {
   const monthRate = dayRate(hourlyRate) * 22;
   return Math.ceil(monthRate - monthRate * discount);
 }
+
+// 3. Calculate the number of workdays given a budget, rate and discount
+function daysInBudget(budget, rate, discount) {
+  return Math.floor(budget / monthRate(rate, discount));
+}
