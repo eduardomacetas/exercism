@@ -57,7 +57,6 @@ const newTickets = {
   "23LA9T41": "Verena Nardi",
 };
 
-console.log(">>> PAOLA");
 console.log(ticketStatus2(newTickets, "23LA9T41")); // => 'Verena Nardi'
 console.log(ticketStatus2(newTickets, "0H2AZ123")); // => 'invalid ticket !!!'
 console.log(ticketStatus2(newTickets, "RE90VAW7")); // => 'invalid ticket !!!'
