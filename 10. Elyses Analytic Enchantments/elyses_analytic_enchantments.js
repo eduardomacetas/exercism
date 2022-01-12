@@ -9,6 +9,7 @@ function getCardPosition(stack, card) {
 // card = 2;
 console.log(getCardPosition([9, 7, 3, 2], 2)); // => 3
 
+// 2. Determine if a card is present
 function doesStackIncludeCard(stack, card) {
   for (let i = 0; i < stack.length; i++) {
     if (stack[i] === card) return true;
