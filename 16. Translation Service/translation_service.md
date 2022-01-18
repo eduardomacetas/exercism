@@ -98,7 +98,7 @@ Implement the function `*premium(text, quality)*` for premium users, which fetch
 
 - If `*api.fetch*` resolves, check the quality before resolving
 - If `*api.fetch*` rejects with `*NotAvailable*`, request the translation instead
-- If `*api.fetch*` rejects with `*Untranslatable*`, forward the error
+- If _`api.fetch`_ rejects with `*Untranslatable*`, forward the error
 - If requesting rejects, forward the error
 
 ```
