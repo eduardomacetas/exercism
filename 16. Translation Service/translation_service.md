@@ -1,5 +1,7 @@
 # Translation Service
 
+More information: [Translation Service](https://exercism.org/tracks/javascript/exercises/translation-service)
+
 ## Instructions
 
 In this exercise, you'll be providing a `*TranslationService*` where paid members have some quality assurance.
