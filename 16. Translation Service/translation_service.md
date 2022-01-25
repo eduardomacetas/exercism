@@ -4,7 +4,7 @@ More information: [Translation Service](https://exercism.org/tracks/javascript/e
 
 ## Instructions
 
-In this exercise, you'll be providing a `*TranslationService*` where paid members have some quality assurance.
+In this exercise, you'll be providing a **`TranslationService`** where paid members have some quality assurance.
 
 You have found an out-of-space translation API that can fulfill any translation request in a reasonable amount of time, and you want to capitalize on this.
 
@@ -14,11 +14,11 @@ The API has a very minimal interface:
 
 ### Fetching a translation
 
-`*api.fetch(text)*` fetches the translation of `*text*`, returning two values:
+**`api.fetch(text)`** fetches the translation of **`text`**, returning two values:
 
-- `*translation:*` the actual translation
-- `*quality:*` the quality expressed as a number
-  If there is no translation available (because it has not been requested yet, see below), the API throws a `*NotAvailable*` error. An `*Untranslatable*` error is thrown if a piece of text is untranslatable.
+- **`translation:`** the actual translation
+- **`quality:`** the quality expressed as a number
+  If there is no translation available (because it has not been requested yet, see below), the API throws a **`NotAvailable`** error. An **`Untranslatable`** error is thrown if a piece of text is untranslatable.
 
 ```
 api.fetch('jIyaj');
@@ -27,11 +27,11 @@ api.fetch('jIyaj');
 
 ### Requesting a translation
 
-Some translations are known in the future. The API knows about these. That's the difference between `*NotAvailable*` (will be available, but must be requested) and `*Untranslatable*` (will never be available).
+Some translations are known in the future. The API knows about these. That's the difference between `*NotAvailable*` (will be available, but must be requested) and **`Untranslatable`** (will never be available).
 
-`*api.request(text, callback)*` requests the translation of `*text*`, calling the `*callback*` once it's ready, without a value, only indicating that it is now available.
+**`api.request(text, callback)`** requests the translation of **`text`**, calling the **`callback`** once it's ready, without a value, only indicating that it is now available.
 
-> This API is unstable, which means that sometimes the API will fail and call the `*callback*` with an error. If that happens, it is okay to re-request.
+> This API is unstable, which means that sometimes the API will fail and call the **`callback`** with an error. If that happens, it is okay to re-request.
 
 ```
 api.request('majQa’');
@@ -49,7 +49,7 @@ If an api.request is called for text is available, the API throws an AbusiveClie
 
 ### 1. Fetch a translation, ignoring the quality
 
-Implement a function `*free(text)*` to fetch a translation, ignoring the quality, and forwarding any errors thrown by the API:
+Implement a function **`free(text)`** to fetch a translation, ignoring the quality, and forwarding any errors thrown by the API:
 
 - Returns the translation if it can be retrieved, regardless of its quality
 - Forwards any error from the translation API
@@ -64,11 +64,11 @@ service.free("jIyajbe'");
 
 ### 2. Fetch a batch of translations, all-or-nothing
 
-Implement a function `*batch([text, text, ...])*` that translates the given texts using the free service, returning all the translations, or a single error.
+Implement a function **`batch([text, text, ...])`** that translates the given texts using the free service, returning all the translations, or a single error.
 
 - Resolves with all the translations (in the same order), if they are all available
 - Rejects with the first error that is encountered
-- Rejects with a `*BatchIsEmpty*` error if no texts are given
+- Rejects with a **`BatchIsEmpty`** error if no texts are given
 
 ```
 service.batch(['jIyaj', "majQa'"]);
@@ -83,10 +83,10 @@ service.batch([]);
 
 ### 3. Request a translation, retrying at most 2 times
 
-Implement a function `*request(text)*` that requests a translation, with automatic retries, up to a total of 3 calls for the same request.
+Implement a function **`request(text)`** that requests a translation, with automatic retries, up to a total of 3 calls for the same request.
 
-- If `*api.request*` does not return an error, resolve with `*undefined*`
-- If `*api.request*` returns an error, retry at most two times
+- If **`api.request`** does not return an error, resolve with **`undefined`**
+- If **`api.request`** returns an error, retry at most two times
 - If you're out of retires, reject with the last error received
 
 ```
@@ -96,11 +96,11 @@ service.request("jIyajbe'");
 
 ### 4. Fetch a translation, inspect the quality, or request it
 
-Implement the function `*premium(text, quality)*` for premium users, which fetches a translation, request it if it's not available, and only returns it if it meets a certain threshold.
+Implement the function **`premium(text, quality)`** for premium users, which fetches a translation, request it if it's not available, and only returns it if it meets a certain threshold.
 
-- If `*api.fetch*` resolves, check the quality before resolving
-- If `*api.fetch*` rejects with `*NotAvailable*`, request the translation instead
-- If _`api.fetch`_ rejects with `*Untranslatable*`, forward the error
+- If **`api.fetch`** resolves, check the quality before resolving
+- If **`api.fetch`** rejects with **`NotAvailable`**, request the translation instead
+- If _`api.fetch`_** rejects with **`Untranslatable`\*\*, forward the error
 - If requesting rejects, forward the error
 
 ```
