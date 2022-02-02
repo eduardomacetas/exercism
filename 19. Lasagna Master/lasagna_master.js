@@ -54,36 +54,36 @@ const friendsList = ["noodles", "sauce", "mozzarella", "kampot pepper"];
 const myList = ["noodles", "meat", "sauce", "mozzarella"];
 console.log(addSecretIngredient(friendsList, myList));
 
-// // 5. Scale the recipe
+// 5. Scale the recipe
+function scaleRecipe(recipe, portions) {
+  let result = {};
+  for (let key in recipe) {
+    result[key] = (recipe[key] * portions) / 2;
+  }
+  return result;
+}
 
-// function scaleRecipe(recipe, portions) {
-//   for (let key in recipe) {
-//     recipe[key] *= portions / 2;
-//   }
-//   return recipe;
-// }
+const recipe = {
+  noodles: 200,
+  sauce: 0.5,
+  mozzarella: 1,
+  meat: 100,
+};
 
-// const recipe = {
+console.log(scaleRecipe(recipe, 4));
+// =>
+// {
+// noodles: 400,
+// sauce: 1,
+// mozzarella: 2,
+// meat: 200,
+// };
+
+console.log(recipe);
+// =>
+// {
 //   noodles: 200,
 //   sauce: 0.5,
 //   mozzarella: 1,
 //   meat: 100,
 // };
-
-// console.log(scaleRecipe(recipe, 4));
-// // =>
-// // {
-// //   noodles: 400,
-// //   sauce: 1,
-// //   mozzarella: 2,
-// //   meat: 200,
-// // };
-
-// console.log(recipe);
-// // =>
-// // {
-// //   noodles: 200,
-// //   sauce: 0.5,
-// //   mozzarella: 1,
-// //   meat: 100,
-// // };
