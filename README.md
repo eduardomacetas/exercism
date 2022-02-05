@@ -10,7 +10,7 @@ Get better at programming through fun, rewarding coding exercises that test your
 
 1. [Lucian's Luscious Lasagna](../master/01.%20Lucian's%20Luscious%20Lasagna/lasagna.js)
 2. [Annalyn's Infiltration](../master/02.%20Annalyn's%20Infiltration/infiltration.js)
-3. [Freelancer Rates](../03.%20Freelancer%20Rates%20/freelancer_rates.js)
+3. [Freelancer Rates](../master/03.%20Freelancer%20Rates%20/freelancer_rates.js)
 4. [Poetry Club Door Policy](../master/04.%20Poetry%20Club%20Door%20Policy%20/poetry_club_door_policy.js)
 5. [Elyses Enchantments](../master/05.%20Elyses%20Enchantments/elyses_enchantments.js)
 6. [Vehicle Purchase](../master/06.%20Vehicle%20Purchase/vehicle_purchase.js)
