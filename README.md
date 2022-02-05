@@ -22,3 +22,9 @@ Get better at programming through fun, rewarding coding exercises that test your
 12. [Elyses Looping Enchantments](../master/12.%20Elyses%20Looping%20Enchantments/elyses_looping_enchantments.js)
 13. [Amusement Park](../master/13.%20Amusement%20Park/amusement_park.js)
 14. [Coordinate Transformation](../master/14.%20Coordinate%20Transformation/coordinate_transformation.js)
+15. [Fruit Picker](../master/15.%20Fruit%20Picker/fruit_picker.js) :construction_worker:
+16. :construction_worker:
+17. [High Score Board](../master/17.%20High%20Score%20Board/high_score_board.js)
+18. [Ozan's Playlist](../master/18.%20Ozan's%20Playlist)
+19. [Lasagna Master](../master/19.%20Lasagna%20Master)
+20. :construction_worker:
