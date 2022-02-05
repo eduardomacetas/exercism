@@ -16,7 +16,7 @@ Get better at programming through fun, rewarding coding exercises that test your
 6. [Vehicle Purchase](../master/06.%20Vehicle%20Purchase/vehicle_purchase.js)
 7. [Bid Watcher](../master/07.%20Bid%20Watcher/bird_watcher.js)
 8. [Mixed Juice](../master/08.%20Mixed%20Juice/mixed_juice.js)
-9. [Lucky Numbers](../master/09.%20Lucky%20Numbers/lucky_numbers.js) ES
+9. [Lucky Numbers](../master/09.%20Lucky%20Numbers/lucky_numbers.js)
 10. [Elyses Analytic Enchantments](../master/10.%20Elyses%20Analytic%20Enchantments/elyses_analytic_enchantments.js)
 11. [Elyses Destructured Enchantments](../master/11.%20Elyses%20Destructured%20Enchantments/elyses_destructured_enchantments.js)
 12. [Elyses Looping Enchantments](../master/12.%20Elyses%20Looping%20Enchantments/elyses_looping_enchantments.js)
