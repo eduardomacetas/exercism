@@ -8,12 +8,17 @@ console.log(seeingDouble(deck)); // => [2, 4, 6, 8, 20]
 
 // 2. Create multiple copies of every 3 found in the deck
 function threeOfEachThree(deck) {
-  // for (let i = 0; i < deck.length; i++) {
-  //   if (deck[i] === 3) {
-
-  //   }
-  // }
-  return "come back later :chocolate_bar:";
+  let newDeck = [];
+  for (let i = 0; i < deck.length; i++) {
+    if (deck[i] === 3) {
+      newDeck.push(3);
+      newDeck.push(3);
+      newDeck.push(3);
+    } else {
+      newDeck.push(deck[i]);
+    }
+  }
+  return newDeck;
 }
 
 const deck2 = [1, 3, 9, 3, 7];
