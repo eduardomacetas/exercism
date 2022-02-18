@@ -35,7 +35,11 @@ console.log(middleTwo(deck3)); // => [5, 6]
 
 // 4. The outside two cards will reappear in the middle of the deck
 function sandwichTrick(deck) {
-  return "come back later :chocolate_bar:";
+  const first = deck.shift();
+  const last = deck.pop();
+
+  deck.splice(deck.length / 2, 0, last, first);
+  return deck;
 }
 
 const deck4 = [1, 2, 3, 5, 6, 10];
