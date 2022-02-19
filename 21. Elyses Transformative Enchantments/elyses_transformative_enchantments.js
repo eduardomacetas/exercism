@@ -63,7 +63,7 @@ console.log(perfectlyOrdered(deck6)); // => [1, 2, 3, 5, 7, 8, 10]
 
 // 7. Reorder the deck
 function reorder(deck) {
-  return "come back later :chocolate_bar:";
+  return deck.sort((a, b) => a - b);
 }
 
 const deck7 = [10, 1, 5, 3, 2];
